@@ -36,6 +36,18 @@ class Home extends Component {
     }
 
     render() {
+        
+        const renderDirectoryItem = ({item}) => {
+            return (
+                <ListItem
+                    title={item.name}
+                    subtitle={item.description}
+                    onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
+                    leftAvatar={{source:require('./images/react-lake.jpg')}}
+                />
+            )
+        }
+        
         return(
             <ScrollView>
                 <RenderItem
