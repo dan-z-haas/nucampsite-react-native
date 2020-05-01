@@ -168,6 +168,7 @@ const MainNavigator = createDrawerNavigator(
         Home: {
             screen: HomeNavigator,
             navigationOptions: {
+                drawerLabel: "Home",
                 drawerIcon: ({ tintColor }) => (
                     <Icon
                         name='home'
@@ -180,6 +181,7 @@ const MainNavigator = createDrawerNavigator(
         },
         Directory: {
             screen: DirectoryNavigator,
+            drawerLabel: "Directory",
             navigationOptions: {
                 drawerIcon: ({ tintColor }) => (
                     <Icon
